@@ -1,11 +1,10 @@
 package com.soja.webscrapper.scrappingstrategy.impl;
 
-import com.soja.rightwingwebscrapper.ScrappingData;
-import com.soja.rightwingwebscrapper.scrappingstrategy.ScrappingStrategy;
+import com.soja.webscrapper.scrappingstrategy.ScrappingStrategy;
 
 public class WSieciPrawdyScrappingStrategy implements ScrappingStrategy {
+
     @Override
-    public ScrappingData getScrappingData() {
-        return null;
+    public void scrape(){
     }
 }
