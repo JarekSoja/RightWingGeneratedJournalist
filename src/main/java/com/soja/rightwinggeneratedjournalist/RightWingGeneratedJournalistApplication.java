@@ -1,22 +1,18 @@
 package com.soja.rightwinggeneratedjournalist;
 
-import com.soja.webscrapper.scrappingstrategy.WebScrapperContext;
-import com.soja.webscrapper.scrappingstrategy.impl.WPolityceScrappingStrategy;
+import com.soja.WebScrapper.scrappingstrategy.WebScrapperContext;
+import com.soja.WebScrapper.scrappingstrategy.impl.WPolityceScrappingStrategy;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import java.util.Arrays;
-
 @SpringBootApplication
 public class RightWingGeneratedJournalistApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(RightWingGeneratedJournalistApplication.class, args);
-
-
     }
 
     @Bean
