@@ -5,6 +5,7 @@ import com.soja.WebScrapper.scrappingstrategy.ScrappingStrategy;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -30,8 +31,13 @@ public class WPolityceScrappingStrategy implements ScrappingStrategy {
 
             if (optionalDocument.isPresent()) {
                 Document doc = optionalDocument.get();
-                String text = doc.body().text();
-                System.out.println(text);
+                Elements textElements = doc.getElementsByTag("article");
+                for (Element e : textElements) {
+                    List<TextNode> textNodes = e.textNodes();
+                    for (TextNode t : textNodes) {
+                        System.out.println(t.toString());
+                    }
+                }
             }
         }
 
