@@ -1,6 +1,6 @@
-package com.soja.WebScrapper.scrappingstrategy.impl;
+package com.soja.WebScrapper.scrappingstrategy;
 
-import com.soja.WebScrapper.scrappingstrategy.ScrappingStrategy;
+import com.soja.WebScrapper.ScrappingStrategy;
 
 public class TygodnikSolidarnoscScrappingStrategy implements ScrappingStrategy {
 

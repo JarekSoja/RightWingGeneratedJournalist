@@ -1,5 +1,6 @@
-package com.soja.WebScrapper.scrappingstrategy;
+package com.soja.WebScrapper;
 
+import com.soja.WebScrapper.ScrappingStrategy;
 import org.springframework.stereotype.Component;
 
 @Component

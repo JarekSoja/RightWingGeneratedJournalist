@@ -1,7 +1,7 @@
-package com.soja.WebScrapper.scrappingstrategy.impl;
+package com.soja.WebScrapper.scrappingstrategy;
 
 import com.soja.Persistor.PersistorController;
-import com.soja.WebScrapper.scrappingstrategy.ScrappingStrategy;
+import com.soja.WebScrapper.ScrappingStrategy;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

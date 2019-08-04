@@ -1,7 +1,7 @@
 package com.soja.rightwinggeneratedjournalist;
 
-import com.soja.WebScrapper.scrappingstrategy.WebScrapperContext;
-import com.soja.WebScrapper.scrappingstrategy.impl.WPolityceScrappingStrategy;
+import com.soja.WebScrapper.WebScrapperContext;
+import com.soja.WebScrapper.scrappingstrategy.WPolityceScrappingStrategy;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

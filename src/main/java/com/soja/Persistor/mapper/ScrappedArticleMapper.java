@@ -2,8 +2,7 @@ package com.soja.Persistor.mapper;
 
 import com.soja.Persistor.ScrappedArticle;
 import com.soja.Persistor.dto.ScrappedArticleDto;
-import com.soja.WebScrapper.scrappingstrategy.impl.WPolityceScrappingStrategy;
-import org.hibernate.Hibernate;
+import com.soja.WebScrapper.scrappingstrategy.WPolityceScrappingStrategy;
 
 import javax.sql.rowset.serial.SerialBlob;
 import java.sql.Blob;

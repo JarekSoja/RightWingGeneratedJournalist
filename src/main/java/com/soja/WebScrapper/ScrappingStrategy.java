@@ -1,4 +1,4 @@
-package com.soja.WebScrapper.scrappingstrategy;
+package com.soja.WebScrapper;
 
 public interface ScrappingStrategy {
 
