@@ -5,24 +5,16 @@ import java.time.LocalDate;
 
 public class ScrappedArticleDto {
 
-    private int id;
     private Blob articleText;
     private String articleLead;
     private LocalDate dateOfScrapping;
+    private String url;
 
-    public ScrappedArticleDto(int id, Blob articleText, String articleLead, LocalDate dateOfScrapping) {
-        this.id = id;
+    public ScrappedArticleDto(Blob articleText, String articleLead, LocalDate dateOfScrapping, String url) {
         this.articleText = articleText;
         this.articleLead = articleLead;
         this.dateOfScrapping = dateOfScrapping;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        this.url = url;
     }
 
     public Blob getArticleText() {
@@ -47,5 +39,13 @@ public class ScrappedArticleDto {
 
     public void setDateOfScrapping(LocalDate dateOfScrapping) {
         this.dateOfScrapping = dateOfScrapping;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

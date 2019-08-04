@@ -13,15 +13,24 @@ public class ScrappedArticle {
     private Blob articleText;
     private String articleLead;
     private LocalDate dateOfScrapping;
+    private String url;
 
     public ScrappedArticle() {
     }
 
-    public ScrappedArticle(int id, Blob articleText, String articleLead, LocalDate dateOfScrapping) {
+    public ScrappedArticle(int id, Blob articleText, String articleLead, LocalDate dateOfScrapping, String url) {
         this.id = id;
         this.articleText = articleText;
         this.articleLead = articleLead;
         this.dateOfScrapping = dateOfScrapping;
+        this.url = url;
+    }
+
+    public ScrappedArticle(Blob articleText, String articleLead, LocalDate dateOfScrapping, String url) {
+        this.articleText = articleText;
+        this.articleLead = articleLead;
+        this.dateOfScrapping = dateOfScrapping;
+        this.url = url;
     }
 
     @Id
@@ -45,6 +54,11 @@ public class ScrappedArticle {
         return dateOfScrapping;
     }
 
+    @Column(name = "URL")
+    public String getUrl() {
+        return url;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -59,5 +73,9 @@ public class ScrappedArticle {
 
     public void setDateOfScrapping(LocalDate dateOfScrapping) {
         this.dateOfScrapping = dateOfScrapping;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
